@@ -1,0 +1,52 @@
+{
+    "name": "spatie/laravel-binary-uuid",
+    "description": "Binary support for UUIDs in Laravel",
+    "keywords": [
+        "spatie",
+        "laravel-binary-uuid"
+    ],
+    "homepage": "https://github.com/spatie/laravel-binary-uuid",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Brent Roose",
+            "email": "brent@spatie.be",
+            "homepage": "https://spatie.be",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "laravel/framework": "~5.5.22",
+        "ramsey/uuid": "^3.7"
+    },
+    "require-dev": {
+        "doctrine/dbal": "~2.5.0",
+        "orchestra/database": "^3.5",
+        "orchestra/testbench": "^3.5",
+        "phpunit/phpunit": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spatie\\BinaryUuid\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Spatie\\BinaryUuid\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Spatie\\BinaryUuid\\UuidServiceProvider"
+            ]
+        }
+    }
+}
